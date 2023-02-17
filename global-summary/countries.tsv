@@ -1,0 +1,195 @@
+name	iso_3166	who_member_state	who_region	completed_jee	completed_naphs	published_naphs	naphs_includes_line_item_costs	naphs_data_machine_readable
+Afghanistan	AFG	TRUE	Eastern Mediterranean Region	TRUE	TRUE	TRUE	TRUE	FALSE
+Albania	ALB	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Algeria	DZA	TRUE	African Region	FALSE	FALSE	NA	NA	NA
+Andorra	AND	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Angola	AGO	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Antigua and Barbuda	ATG	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Argentina	ARG	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Armenia	ARM	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Australia	AUS	TRUE	Western Pacific Region	TRUE	TRUE	TRUE	FALSE	FALSE
+Austria	AUT	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Azerbaijan	AZE	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+"Bahamas, The"	BHS	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Bahrain	BHR	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Bangladesh	BGD	TRUE	South-East Asia Region	TRUE	TRUE	FALSE	NA	NA
+Barbados	BRB	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Belarus	BLR	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Belgium	BEL	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Belize	BLZ	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Benin	BEN	TRUE	African Region	TRUE	TRUE	TRUE	TRUE	FALSE
+Bhutan	BTN	TRUE	South-East Asia Region	TRUE	TRUE	FALSE	NA	NA
+Bolivia	BOL	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Bosnia and Herzegovina	BIH	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Botswana	BWA	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Brazil	BRA	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Brunei	BRN	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Bulgaria	BGR	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Burkina Faso	BFA	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Burundi	BDI	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Cabo Verde	CPV	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Cambodia	KHM	TRUE	Western Pacific Region	TRUE	TRUE	FALSE	NA	NA
+Cameroon	CMR	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Canada	CAN	TRUE	Region of the Americas	TRUE	FALSE	FALSE	NA	NA
+Central African Republic	CAF	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Chad	TCD	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Chile	CHL	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+China	CHN	TRUE	Western Pacific Region	FALSE	TRUE	FALSE	NA	NA
+Colombia	COL	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Comoros	COM	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+"Congo, Democratic Republic of the"	COD	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+"Congo, Republic of the"	COG	TRUE	African Region	TRUE	FALSE	FALSE	NA	NA
+Cook Islands	COK	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+Costa Rica	CRI	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+C™te d'Ivoire	CIV	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Croatia	HRV	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Cuba	CUB	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Cyprus	CYP	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Czechia	CZE	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Denmark	DNK	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Djibouti	DJI	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Dominica	DMA	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Dominican Republic	DOM	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Ecuador	ECU	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Egypt	EGY	TRUE	Eastern Mediterranean Region	FALSE	TRUE	FALSE	NA	NA
+El Salvador	SLV	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Equatorial Guinea	GNQ	TRUE	African Region	FALSE	FALSE	NA	NA	NA
+Eritrea	ERI	TRUE	African Region	TRUE	TRUE	TRUE	TRUE	FALSE
+Estonia	EST	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Eswatini	SWZ	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Ethiopia	ETH	TRUE	African Region	TRUE	FALSE	FALSE	NA	NA
+Fiji	FJI	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+Finland	FIN	TRUE	European Region	TRUE	TRUE	FALSE	NA	NA
+France	FRA	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Gabon	GAB	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Gambia	GMB	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Georgia	GEO	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Germany	DEU	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Ghana	GHA	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Greece	GRC	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Grenada	GRD	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Guatemala	GTM	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Guinea	GIN	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Guinea-Bissau	GNB	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Guyana	GUY	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Haiti	HTI	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Honduras	HND	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Hungary	HUN	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Iceland	ISL	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+India	IND	TRUE	South-East Asia Region	FALSE	FALSE	NA	NA	NA
+Indonesia	IDN	TRUE	South-East Asia Region	TRUE	TRUE	TRUE	FALSE	FALSE
+Iran	IRN	TRUE	Eastern Mediterranean Region	FALSE	FALSE	NA	NA	NA
+Iraq	IRQ	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Ireland	IRL	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Israel	ISR	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Italy	ITA	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Jamaica	JAM	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Japan	JPN	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Jordan	JOR	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Kazakhstan	KAZ	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Kenya	KEN	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Kiribati	KIR	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+North Korea	PRK	TRUE	South-East Asia Region	FALSE	FALSE	NA	NA	NA
+South Korea	KOR	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Kuwait	KWT	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Kyrgyzstan	KGZ	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Laos	LAO	TRUE	Western Pacific Region	TRUE	TRUE	FALSE	NA	NA
+Latvia	LVA	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Lebanon	LBN	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Lesotho	LSO	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Liberia	LBR	TRUE	African Region	TRUE	TRUE	TRUE	TRUE	FALSE
+Libya	LBY	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Lithuania	LTU	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Luxembourg	LUX	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Madagascar	MDG	TRUE	African Region	TRUE	FALSE	FALSE	NA	NA
+Malawi	MWI	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Malaysia	MYS	TRUE	Western Pacific Region	TRUE	TRUE	FALSE	NA	NA
+Maldives	MDV	TRUE	South-East Asia Region	TRUE	TRUE	FALSE	NA	NA
+Mali	MLI	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Malta	MLT	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Marshall Islands	MHL	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Mauritania	MRT	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Mauritius	MUS	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Mexico	MEX	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+"Micronesia, Federated States of"	FSM	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Moldova	MDA	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Monaco	MCO	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Mongolia	MNG	TRUE	Western Pacific Region	TRUE	TRUE	FALSE	NA	NA
+Montenegro	MNE	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Morocco	MAR	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Mozambique	MOZ	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Myanmar	MMR	TRUE	South-East Asia Region	FALSE	FALSE	NA	NA	NA
+Namibia	NAM	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Nauru	NRU	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+Nepal	NPL	TRUE	South-East Asia Region	FALSE	FALSE	NA	NA	NA
+Netherlands	NLD	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+New Zealand	NZL	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Nicaragua	NIC	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Niger	NER	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Nigeria	NGA	TRUE	African Region	TRUE	TRUE	TRUE	TRUE	FALSE
+Niue	NIU	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+North Macedonia	MKD	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Norway	NOR	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Oman	OMN	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Pakistan	PAK	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Palau	PLW	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Panama	PAN	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Papua New Guinea	PNG	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+Paraguay	PRY	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Peru	PER	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Philippines	PHL	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Poland	POL	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Portugal	PRT	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Qatar	QAT	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Romania	ROU	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Russia	RUS	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Rwanda	RWA	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Saint Kitts and Nevis	KNA	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Saint Lucia	LCA	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Saint Vincent and the Grenadines	VCT	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Samoa	WSM	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+San Marino	SMR	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Sao Tome and Principe	STP	TRUE	African Region	TRUE	FALSE	FALSE	NA	NA
+Saudi Arabia	SAU	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Senegal	SEN	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Serbia	SRB	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Seychelles	SYC	TRUE	African Region	TRUE	FALSE	FALSE	NA	NA
+Sierra Leone	SLE	TRUE	African Region	TRUE	TRUE	TRUE	TRUE	FALSE
+Singapore	SGP	TRUE	Western Pacific Region	TRUE	FALSE	FALSE	NA	NA
+Slovakia	SVK	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Slovenia	SVN	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Solomon Islands	SLB	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+Somalia	SOM	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+South Africa	ZAF	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+South Sudan	SSD	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Spain	ESP	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Sri Lanka	LKA	TRUE	South-East Asia Region	TRUE	TRUE	TRUE	FALSE	FALSE
+Sudan	SDN	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Suriname	SUR	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Sweden	SWE	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Switzerland	CHE	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Syria	SYR	TRUE	Eastern Mediterranean Region	FALSE	FALSE	NA	NA	NA
+Tajikistan	TJK	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
+Tanzania	TZA	TRUE	African Region	TRUE	TRUE	TRUE	FALSE	FALSE
+Thailand	THA	TRUE	South-East Asia Region	TRUE	TRUE	FALSE	NA	NA
+Timor-Leste	TLS	TRUE	South-East Asia Region	TRUE	TRUE	TRUE	TRUE	FALSE
+Togo	TGO	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Tonga	TON	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+Trinidad and Tobago	TTO	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Tunisia	TUN	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+Turkey (Turkiye)	TUR	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Turkmenistan	TKM	TRUE	European Region	TRUE	TRUE	FALSE	NA	NA
+Tuvalu	TUV	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+Uganda	UGA	TRUE	African Region	TRUE	TRUE	TRUE	TRUE	FALSE
+Ukraine	UKR	TRUE	European Region	FALSE	TRUE	FALSE	NA	NA
+United Arab Emirates	ARE	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
+United Kingdom	GBR	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+United States of America	USA	TRUE	Region of the Americas	TRUE	TRUE	TRUE	FALSE	FALSE
+Uruguay	URY	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Uzbekistan	UZB	TRUE	European Region	FALSE	FALSE	NA	NA	NA
+Vanuatu	VUT	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
+Venezuela	VEN	TRUE	Region of the Americas	FALSE	FALSE	NA	NA	NA
+Vietnam	VNM	TRUE	Western Pacific Region	TRUE	TRUE	FALSE	NA	NA
+Yemen	YEM	TRUE	Eastern Mediterranean Region	FALSE	FALSE	NA	NA	NA
+Zambia	ZMB	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
+Zimbabwe	ZWE	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA

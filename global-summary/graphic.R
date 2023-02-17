@@ -1,0 +1,147 @@
+#############################################
+## Background ###############################
+#############################################
+
+## This script contains code to generate a simple barplot graphic
+## assume working directory is set to NAPHS-data
+
+#############################################
+## Setup ####################################
+#############################################
+
+## NOTE: if you don't already have these libraries installed, you can do so by running install.packages()
+## example: install.packages("ggplot2")
+
+## Load libraries
+library(tidyverse) ## for data management
+library(scales) ## for commas on axes of plots
+
+#############################################
+## Read in data #############################
+#############################################
+
+## NAPHS country data - one row per WHO member state
+countries <- read.delim("countries.tsv")
+
+#############################################
+## Summarize data ###########################
+#############################################
+
+## print summary info, globally
+countries %>%
+  summarize(total_member_states = sum(who_member_state == TRUE),
+            completed_jee = sum(completed_jee == TRUE),
+            completed_naphs = sum(completed_naphs == TRUE),
+            published_naphs = sum(published_naphs == TRUE, na.rm = TRUE ),
+            published_naphs_data = sum(naphs_includes_line_item_costs == TRUE, na.rm = TRUE),
+            machine_readable_data = sum(naphs_data_machine_readable == TRUE, na.rm = TRUE))
+            
+#############################################
+## Global funnel: barplot ###################
+#############################################
+
+countries %>%
+  summarize(aggregation = "global",
+            total_member_states = sum(who_member_state == TRUE),
+            completed_jee = sum(completed_jee == TRUE),
+            completed_naphs = sum(completed_naphs == TRUE),
+            published_naphs = sum(published_naphs == TRUE, na.rm = TRUE ),
+            published_naphs_data = sum(naphs_includes_line_item_costs == TRUE, na.rm = TRUE),
+            machine_readable_data = sum(naphs_data_machine_readable == TRUE, na.rm = TRUE)) %>%
+  pivot_longer(!aggregation, names_to = "metric", values_to = "count") %>%
+  mutate(label = factor(
+    recode(metric, 
+           total_member_states = "All Countries (IHR Member States)",
+           completed_jee = "Completed JEE",
+           completed_naphs = "Completed NAPHS",
+           published_naphs  = "Published NAPHS",
+           published_naphs_data = "Published costed line items",
+           machine_readable_data = "Published machine readable data"),
+    levels = rev(c("All Countries (IHR Member States)", "Completed JEE", "Completed NAPHS", "Published NAPHS", "Published costed line items", "Published machine readable data")))) %>%
+  mutate(pct = count/max(count)) %>% 
+  ggplot(aes(x = count, y = label, fill = label)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste(round(pct*100, 0), "%", sep = "")),
+            hjust = 0, nudge_x = 4, size = 3) +
+  ylab("") +
+  xlab("Number of Countries\nIHR member States") +
+  scale_x_continuous(expand = c(0, 45)) +
+  scale_fill_manual(values = rev(c("#172869", "#088BBE", "#1BB6AF", "#F8CD9C", "#F6A1A5", "#EA7580")),
+                    guide = guide_legend(reverse = TRUE)) + 
+  labs(caption = "", fill = "Process") +
+  theme_minimal() + 
+  theme(plot.caption = element_text(size = 7), legend.position = "right") +
+  ggtitle("Participation in Monitoring and Evaluation\nFramework Process")
+
+#############################################
+## Funnel by region: barplot (v1) ###########
+#############################################
+
+countries %>%
+  group_by(who_region) %>%
+  summarize(total_member_states = sum(who_member_state == TRUE),
+            completed_jee = sum(completed_jee == TRUE),
+            completed_naphs = sum(completed_naphs == TRUE),
+            published_naphs = sum(published_naphs == TRUE, na.rm = TRUE ),
+            published_naphs_data = sum(naphs_includes_line_item_costs == TRUE, na.rm = TRUE),
+            machine_readable_data = sum(naphs_data_machine_readable == TRUE, na.rm = TRUE)) %>%
+  pivot_longer(!who_region, names_to = "metric", values_to = "count") %>%
+  mutate(label = factor(
+    recode(metric, 
+           total_member_states = "All Countries in Region",
+           completed_jee = "Completed JEE",
+           completed_naphs = "Completed NAPHS",
+           published_naphs  = "Published NAPHS",
+           published_naphs_data = "Published costed line items",
+           machine_readable_data = "Published machine readable data"),
+    levels = rev(c("All Countries in Region", "Completed JEE", "Completed NAPHS", "Published NAPHS", "Published costed line items", "Published machine readable data")))) %>%
+  mutate(pct = count/max(count)) %>%
+  ggplot(aes(x = pct, y = who_region, fill = label)) +
+  geom_bar(position = position_dodge2(width = 0.9, preserve = "single"), stat = "identity") +
+  scale_x_continuous(labels = scales::percent) +
+  xlab("Percent of Countries in Region") +
+  ylab("") +
+  scale_fill_manual(values = rev(c("#172869", "#088BBE", "#1BB6AF", "#F8CD9C", "#F6A1A5", "#EA7580")),
+                    guide = guide_legend(reverse = TRUE)) +
+  labs(caption = "", fill = "Process") +
+  theme_minimal() + 
+  theme(plot.caption = element_text(size = 7), legend.position = "right") +
+  ggtitle("Participation in Monitoring and Evaluation\nFramework Process")
+
+
+
+#############################################
+## Funnel by region: barplot (v2) ###########
+#############################################
+
+countries %>%
+  group_by(who_region) %>%
+  summarize(total_member_states = sum(who_member_state == TRUE),
+            completed_jee = sum(completed_jee == TRUE),
+            completed_naphs = sum(completed_naphs == TRUE),
+            published_naphs = sum(published_naphs == TRUE, na.rm = TRUE ),
+            published_naphs_data = sum(naphs_includes_line_item_costs == TRUE, na.rm = TRUE),
+            machine_readable_data = sum(naphs_data_machine_readable == TRUE, na.rm = TRUE)) %>%
+  pivot_longer(!who_region, names_to = "metric", values_to = "count") %>%
+  mutate(label = factor(
+    recode(metric, 
+           total_member_states = "All Countries in Region",
+           completed_jee = "Completed JEE",
+           completed_naphs = "Completed NAPHS",
+           published_naphs  = "Published NAPHS",
+           published_naphs_data = "Published costed line items",
+           machine_readable_data = "Published machine readable data"),
+    levels = rev(c("All Countries in Region", "Completed JEE", "Completed NAPHS", "Published NAPHS", "Published costed line items", "Published machine readable data")))) %>%
+  mutate(pct = count/max(count)) %>%
+  ggplot(aes(x = pct, y = label, fill = label, group = who_region)) +
+  geom_bar(position = position_dodge2(width = 0.9, preserve = "single"), stat = "identity") +
+  scale_x_continuous(labels = scales::percent) +
+  xlab("Percent of Countries in Region") +
+  ylab("") +
+  scale_fill_manual(values = rev(c("#172869", "#088BBE", "#1BB6AF", "#F8CD9C", "#F6A1A5", "#EA7580")),
+                    guide = guide_legend(reverse = TRUE)) +
+  labs(caption = "", fill = "Process") +
+  theme_minimal() + 
+  theme(plot.caption = element_text(size = 7), legend.position = "none") +
+  ggtitle("Participation in Monitoring and Evaluation\nFramework Process") +
+  facet_wrap(~who_region)
