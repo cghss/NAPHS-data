@@ -108,8 +108,6 @@ countries %>%
   theme(plot.caption = element_text(size = 7), legend.position = "right") +
   ggtitle("Participation in Monitoring and Evaluation\nFramework Process")
 
-
-
 #############################################
 ## Funnel by region: barplot (v2) ###########
 #############################################
