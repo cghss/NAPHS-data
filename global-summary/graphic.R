@@ -37,7 +37,7 @@ countries %>%
             machine_readable_data = sum(naphs_data_machine_readable == TRUE, na.rm = TRUE))
             
 #############################################
-## Global funnel: barplot ###################
+## Global funnel: barplot (v1) ##############
 #############################################
 
 countries %>%
@@ -60,17 +60,86 @@ countries %>%
     levels = rev(c("All Countries (IHR Member States)", "Completed JEE", "Completed NAPHS", "Published NAPHS", "Published costed line items", "Published machine readable data")))) %>%
   mutate(pct = count/max(count)) %>% 
   ggplot(aes(x = count, y = label, fill = label)) +
-  geom_bar(stat = "identity") +
+  geom_bar(stat = "identity", color = "black") +
   geom_text(aes(label = paste(round(pct*100, 0), "%", sep = "")),
             hjust = 0, nudge_x = 4, size = 3) +
   ylab("") +
-  xlab("Number of Countries\nIHR member States") +
+  xlab("Number of Countries\n(IHR member States)") +
   scale_x_continuous(expand = c(0, 45)) +
   scale_fill_manual(values = rev(c("#172869", "#088BBE", "#1BB6AF", "#F8CD9C", "#F6A1A5", "#EA7580")),
                     guide = guide_legend(reverse = TRUE)) + 
   labs(caption = "", fill = "Process") +
   theme_minimal() + 
-  theme(plot.caption = element_text(size = 7), legend.position = "right") +
+  theme(plot.caption = element_text(size = 7), legend.position = "none") +
+  ggtitle("Participation in Monitoring and Evaluation\nFramework Process")
+
+#############################################
+## Global funnel: barplot (v2) ##############
+#############################################
+
+countries %>%
+  summarize(aggregation = "global",
+            completed_jee = sum(completed_jee == TRUE),
+            completed_naphs = sum(completed_naphs == TRUE),
+            published_naphs = sum(published_naphs == TRUE, na.rm = TRUE ),
+            published_naphs_data = sum(naphs_includes_line_item_costs == TRUE, na.rm = TRUE),
+            machine_readable_data = sum(naphs_data_machine_readable == TRUE, na.rm = TRUE)) %>%
+  pivot_longer(!aggregation, names_to = "metric", values_to = "count") %>%
+  mutate(label = factor(
+    recode(metric, 
+           completed_jee = "Completed JEE",
+           completed_naphs = "Completed NAPHS",
+           published_naphs  = "Published NAPHS",
+           published_naphs_data = "Published costed line items",
+           machine_readable_data = "Published machine readable data"),
+    levels = rev(c("Completed JEE", "Completed NAPHS", "Published NAPHS", "Published costed line items", "Published machine readable data")))) %>%
+  mutate(pct = count/max(count)) %>% 
+  ggplot(aes(x = count, y = label, fill = label)) +
+  geom_bar(stat = "identity", color = "black") +
+  geom_text(aes(label = paste(round(pct*100, 0), "%", sep = "")),
+            hjust = 0, nudge_x = 4, size = 3) +
+  ylab("") +
+  xlab("Number of Countries\n(IHR member States)") +
+  scale_x_continuous(expand = c(0, 45)) +
+  scale_fill_manual(values = rev(c("#172869", "#088BBE", "#1BB6AF", "#F8CD9C", "#F6A1A5")),
+                    guide = guide_legend(reverse = TRUE)) + 
+  labs(caption = "", fill = "Process") +
+  theme_minimal() + 
+  theme(plot.caption = element_text(size = 7), legend.position = "none") +
+  ggtitle("Participation in Monitoring and Evaluation\nFramework Process")
+
+#############################################
+## Global funnel: barplot (v3) ##############
+#############################################
+
+countries %>%
+  summarize(aggregation = "global",
+            completed_jee = sum(completed_jee == TRUE),
+            completed_naphs = sum(completed_naphs == TRUE),
+            published_naphs = sum(published_naphs == TRUE, na.rm = TRUE ),
+            published_naphs_data = sum(naphs_includes_line_item_costs == TRUE, na.rm = TRUE),
+            machine_readable_data = sum(naphs_data_machine_readable == TRUE, na.rm = TRUE)) %>%
+  pivot_longer(!aggregation, names_to = "metric", values_to = "count") %>%
+  mutate(label = factor(
+    recode(metric, 
+           completed_jee = "Completed JEE",
+           completed_naphs = "Completed NAPHS",
+           published_naphs  = "Published NAPHS",
+           published_naphs_data = "Published costed line items",
+           machine_readable_data = "Published machine readable data"),
+    levels = rev(c("Completed JEE", "Completed NAPHS", "Published NAPHS", "Published costed line items", "Published machine readable data")))) %>%
+  mutate(pct = count/max(count)) %>% 
+  ggplot(aes(x = count, y = label, fill = label)) +
+  geom_bar(stat = "identity", color = "black") +
+  geom_text(aes(label = paste(count, " (", round(pct*100, 0), "%)", sep = "")),
+            hjust = 0, nudge_x = 4, size = 3) +
+  ylab("") +
+  xlab("Number of Countries\n(IHR member States)") +
+  scale_fill_manual(values = rev(c("#172869", "#088BBE", "#1BB6AF", "#F8CD9C", "#F6A1A5")),
+                    guide = guide_legend(reverse = TRUE)) + 
+  labs(caption = "", fill = "Process") +
+  theme_minimal() + 
+  theme(plot.caption = element_text(size = 7), legend.position = "none") +
   ggtitle("Participation in Monitoring and Evaluation\nFramework Process")
 
 #############################################
