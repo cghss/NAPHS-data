@@ -118,7 +118,7 @@ Mongolia	MNG	TRUE	Western Pacific Region	TRUE	TRUE	FALSE	NA	NA
 Montenegro	MNE	TRUE	European Region	TRUE	FALSE	FALSE	NA	NA
 Morocco	MAR	TRUE	Eastern Mediterranean Region	TRUE	TRUE	FALSE	NA	NA
 Mozambique	MOZ	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
-Myanmar	MMR	TRUE	South-East Asia Region	FALSE	FALSE	NA	NA	NA
+Myanmar	MMR	TRUE	South-East Asia Region	TRUE	TRUE	TRUE	TRUE	NA
 Namibia	NAM	TRUE	African Region	TRUE	TRUE	FALSE	NA	NA
 Nauru	NRU	TRUE	Western Pacific Region	FALSE	FALSE	NA	NA	NA
 Nepal	NPL	TRUE	South-East Asia Region	FALSE	FALSE	NA	NA	NA
