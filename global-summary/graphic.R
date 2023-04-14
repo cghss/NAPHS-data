@@ -62,7 +62,7 @@ countries %>%
     levels = rev(c("Completed JEE", "Completed NAPHS", "Published NAPHS", "Published costed line items", "Published machine readable data")))) %>%
   mutate(pct = count/max(count)) %>% 
   ggplot(aes(x = count, y = label, fill = label)) +
-  geom_bar(stat = "identity", color = "black", fill = "#172869") +
+  geom_bar(stat = "identity", color = "black", fill = "#088BBE") +
   geom_text(aes(label = paste(count, 
                               ifelse(pct != 1,
                                      paste(" (", round(pct*100, 0), "%)", sep = ""),
