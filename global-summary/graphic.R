@@ -44,6 +44,18 @@ countries %>%
 #############################################
 ## prior interations of this barplot included below
 
+
+## from JAMA:
+# "The image and case presentation should be from the same patient and must not have been published previously. 
+# In some cases, additional figures may be included to accompany the answer explanations 
+# (see description of additional figure(s) above). All images submitted should be high-quality .jpg or .tif files.
+# Submit the original version of all image files at the highest resolution possible without labels. 
+# In general, the original image file should have a minimum resolution of 350 dpi at a width of about 5 inches. 
+# Do not increase the original resolution, resize, or crop the image; where applicable, we will crop to maintain 
+# patient confidentiality. If any labels, arrowheads, or A/B panel indicators are desired, provide a 
+# separate labeled version of the figure(s) for reference. All labels will be reformatted to journal style."
+
+tiff("figure1.tiff", width = 5.8, height = 4, units = "in", res = 400)
 countries %>%
   summarize(aggregation = "global",
             completed_jee = sum(completed_jee == TRUE),
@@ -74,6 +86,7 @@ countries %>%
   theme_minimal() + 
   theme(plot.caption = element_text(size = 7)) +
   ggtitle("Participation in Monitoring and Evaluation\nFramework Process")
+dev.off()
 
 #############################################
 ## Global funnel: barplot (v1) ##############
