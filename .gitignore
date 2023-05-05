@@ -41,5 +41,5 @@ vignettes/*.pdf
 .Renviron
 
 # Powerpoint files
-.ppt
-.pptx
+*.ppt
+*.pptx
