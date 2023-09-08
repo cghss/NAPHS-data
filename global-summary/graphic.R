@@ -13,6 +13,8 @@
 ## NOTE: if you don't already have these libraries installed, you can do so by running install.packages()
 ## example: install.packages("ggplot2")
 
+temp <- read_excel("~/Desktop/temp.xlsx", col_names = TRUE)
+
 ## Load libraries
 library(tidyverse) ## for data management
 library(scales) ## for commas on axes of plots
@@ -22,8 +24,16 @@ library(scales) ## for commas on axes of plots
 #############################################
 
 ## NAPHS country data - one row per WHO member state
-## Data as of 
-countries <- read.delim("countries.tsv")
+## Data as of September 8, 2023
+countries <- read.delim("data/countries.tsv")
+
+#table(countries$who_region[which(countries$completed_jee == TRUE)])
+View(countries[which(countries$who_region == "Eastern Mediterranean Region" & countries$completed_jee == TRUE),])
+View(countries[which(countries$who_region == "African Region" & countries$completed_jee == TRUE),])
+View(countries[which(countries$who_region == "European Region" & countries$completed_jee == TRUE),])
+View(countries[which(countries$who_region == "Region of the Americas" & countries$completed_jee == TRUE),])
+View(countries[which(countries$who_region == "South-East Asia Region" & countries$completed_jee == TRUE),])
+View(countries[which(countries$who_region == "Western Pacific Region" & countries$completed_jee == TRUE),])
 
 #############################################
 ## Summarize data: ##########################
