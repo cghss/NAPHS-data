@@ -3,5 +3,5 @@ As defined by [WHO](https://www.who.int/emergencies/operations/international-hea
 
 This github repository contains data, analyses, and other key materials to support ongoing work and analyses of existing data associated the the NAPHS process, in particular, data on NAPHS-related costing. The file structure is organized by project:
 
-* **global-summary/:** global status of JEE and NAPHS completion and data sharing as of January 26, 2023
+* **global-summary/:** global status of JEE and NAPHS completion and data sharing as of September 8, 2023
 * **talks/:** publicly sharable materials from lectures and invited presentations related to NAPHS data
